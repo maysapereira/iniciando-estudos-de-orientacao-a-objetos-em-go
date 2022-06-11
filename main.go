@@ -33,27 +33,13 @@ func (c *ContaCorrente) Sacar(valorDoSaque float64) string {
 
 func main() {
 	contaMaysa := ContaCorrente { titular: "Maysa", numeroAgencia: 789, numeroConta: 654321, saldo: 150.50 }
-
 	contaKasper := ContaCorrente {"Kasper", 222, 111222, 200 }
+	contaIna := ContaCorrente {"Iná", 325, 3344, 300 }
+	contaNikole := ContaCorrente{"Nikole", 444, 112233, 350}
 
 	fmt.Println(contaMaysa)
 	fmt.Println(contaKasper)
-
-	var contaIna *ContaCorrente
-	contaIna = new(ContaCorrente)
-	contaIna.titular = "Iná"
-	contaIna.numeroAgencia = 325
-	contaIna.numeroConta = 333444
-	contaIna.saldo = 300
-
 	fmt.Println(contaIna)
-
-	contaNikole := ContaCorrente{"Nikole", 444, 112233, 350}
-
-	fmt.Println(contaNikole.saldo)
-
-	status, valor := contaNikole.Depositar(500)
-
-	fmt.Println(status, valor)
-
+	fmt.Println(contaNikole)
+	
 }
