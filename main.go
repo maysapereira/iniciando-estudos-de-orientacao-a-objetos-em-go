@@ -16,4 +16,13 @@ func main() {
 
 	fmt.Println(contaMaysa)
 	fmt.Println(contaKasper)
+
+	var contaIna *ContaCorrente
+	contaIna = new(ContaCorrente)
+	contaIna.titular = "Iná"
+	contaIna.numeroAgencia = 325
+	contaIna.numeroConta = 333444
+	contaIna.saldo = 300
+
+	fmt.Println(contaIna)
 }
