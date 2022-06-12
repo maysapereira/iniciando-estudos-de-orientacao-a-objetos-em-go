@@ -1,0 +1,1 @@
+Projeto criado para aprender orientação a objetos na linguagem GO. Neste projeto foi utilizado structs, referências, funções com múltiplos retornos, funções sem retornos, composição, divisão do projeto em pacotes, encapsulamento e interface.
