@@ -10,10 +10,11 @@ import (
 
 func main() {
 
-	clienteMaysa := clientes.Titular {"Maysa", "111.222.333.44", "Desenvolvedora de Software"}
+	contaMaysa := contas.ContaPoupanca {}
 
-	contaMaysa := contas.ContaCorrente { clienteMaysa, 789, 654321, 800.50 }
+	contaMaysa.Depositar(100)
+	contaMaysa.Sacar(88)
 
-	fmt.Println(contaMaysa)
+	fmt.Println(contaMaysa.ObterSaldo())
 	
 }
